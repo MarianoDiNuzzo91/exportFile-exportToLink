@@ -1,0 +1,4 @@
+<aura:component implements="flexipage:availableForRecordHome,force:hasRecordId,force:hasSObjectName,forceCommunity:availableForAllPageTypes,force:lightningQuickAction,force:appHostable" access="global" controller="ApexParamTypesController">
+<aura:attribute name="sessionId" type="String" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+</aura:component>	
