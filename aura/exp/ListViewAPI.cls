@@ -86,7 +86,7 @@ global with sharing class ListViewAPI {
             req.setMethod('POST');
             req.setHeader('Content-Type','application/x-www-form-urlencoded');
             req.setEndpoint(endpoint);
-            req.setBody('grant_type=asd123A!SD' + '&username=marianodinuzzo.bip@cunning-fox-ksux2m.com' + '&password=asd123A!SD');
+            req.setBody('grant_type=xxxxxxxx' + '&username=xxxxxx' + '&password=xxxxxxx');
             
             Http h = new Http();
             HTTPResponse res = h.send(req);
@@ -104,7 +104,7 @@ global with sharing class ListViewAPI {
         }
 
      /*    public static httpResponse getBearerKey () {
-            String listViewId = '00B7Q00000KV8NrUAL';
+            String listViewId = 'xxxxxxxxxxx';
             String orgDomain = Url.getSalesforceBaseUrl().toExternalForm();
             String endpoint = orgDomain + '/services/data/v37.0/sobjects/Case/listviews/' + listViewId + '/describe';
             
@@ -129,10 +129,10 @@ global with sharing class ListViewAPI {
 
         @future (callout=true)
         public static void getRequestToken(){
-            String cKey = '3MVG9t0sl2P.pByonDZ9Ts9rPjXlqKOu1OZFdRxzmoZI9fHZXasGFzEv1jDGzgOlOn2qfCpCA4AamJJoPGhcK';
-            String cSecret = 'CFFFC55BBF77E2E40B73ABE85E4EF87BEB8AD8A1D26804262AA8B78A63C7ED24';
-            String uName = 'marianodinuzzo.bip@cunning-fox-ksux2m.com';
-            String passwd = 'asd123A!SD';
+            String cKey = 'xxxxxxxx';
+            String cSecret = 'xxxxxxxx';
+            String uName = 'xxxxxxxxx';
+            String passwd = 'xxxxxxxxx';
     
                            String reqBody = 'grant_type=password&client_id='+cKey+'&client_secret='+cSecret+'&username='+uName+'&password='+passwd;                                      
 
