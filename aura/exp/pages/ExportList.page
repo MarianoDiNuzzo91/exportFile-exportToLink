@@ -1,0 +1,17 @@
+<!--
+  @description       : 
+  @author            : Mariano Di Nuzzo
+  @group             : 
+  @last modified on  : 11-03-2022
+  @last modified by  : Mariano Di Nuzzo
+-->
+<apex:page controller="controllerExport" sidebar="false">
+  <apex:includeLightning/> 
+      {!$Api.Session_ID}  
+    <script>
+        let sessionId = "{!$Api.Session_ID}";
+        $Lightning.use("c:exportApp", function() {
+          $Lightning.createComponent("c:exp", { "sessionId" : sessionId });
+        });
+    </script>
+</apex:page>

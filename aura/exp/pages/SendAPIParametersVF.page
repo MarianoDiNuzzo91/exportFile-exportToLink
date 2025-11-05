@@ -1,0 +1,12 @@
+<!--
+  @description       : 
+  @author            : Mariano Di Nuzzo
+  @group             : 
+  @last modified on  : 10-11-2022
+  @last modified by  : Mariano Di Nuzzo
+-->
+<apex:page >
+    Start_of_SessionId{!$Api.Session_ID}End_of_SessionId
+    <br/>
+    Start_of_URL{!$Api.Partner_Server_URL_160}End_of_URL
+</apex:page>
